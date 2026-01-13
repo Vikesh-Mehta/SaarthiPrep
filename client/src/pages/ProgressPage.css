@@ -1,0 +1,36 @@
+/* client/src/pages/MyProgressPage.css */
+.progress-page {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.progress-page-header {
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.progress-page-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.progress-page-header p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .progress-grid {
+    grid-template-columns: 1fr;
+  }
+}

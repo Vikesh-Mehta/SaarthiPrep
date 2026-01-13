@@ -1,0 +1,105 @@
+/* client/src/components/resume/ResumeComponents.css */
+
+/* Upload Box */
+.resume-upload-box {
+  width: 100%;
+  max-width: 600px;
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.resume-upload-box.dragging-over {
+  border-color: var(--primary-color);
+  background-color: #f0f5ff;
+}
+.upload-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.resume-upload-box h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.resume-upload-box p {
+  color: #6b7280;
+}
+.upload-note {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+/* Suggested Roles */
+.suggested-roles-card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+.roles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.role-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+.role-item:last-child { border: none; }
+.role-title { font-weight: 500; font-size: 1.1rem; }
+.role-match { text-align: right; }
+.match-percent { font-size: 1.2rem; font-weight: 600; color: var(--primary-color); }
+.role-match span { display: block; }
+
+/* Score Banner */
+.resume-score-banner {
+  position: fixed;
+  bottom: 0;
+  left: 250px; /* Aligns with sidebar */
+  right: 0;
+  background-color: #111827;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem 2rem;
+  border-top: 1px solid #374151;
+  z-index: 5;
+  transition: left 0.3s ease;
+}
+/* Adjust when sidebar is collapsed */
+.main-layout.sidebar-collapsed .resume-score-banner {
+  left: 80px;
+}
+.score-item {
+  text-align: center;
+  border-right: 1px solid #374151;
+}
+.score-item:last-child {
+  border-right: none;
+}
+.score-value {
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+}
+.score-label {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.score-rating {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px;
+}
+
+/* Rating colors */
+.score-rating.excellent { background-color: #10B981; color: #fff; }
+.score-rating.good { background-color: #3b82f6; color: #fff; }
+.score-rating.average { background-color: #f59e0b; color: #fff; }
+.score-rating.improvement-needed { background-color: #ef4444; color: #fff; }
