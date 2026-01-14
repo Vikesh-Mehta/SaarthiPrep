@@ -203,7 +203,7 @@ This project is licensed under the ISC License.
 
 ## 👨‍💻 Author
 
-Sunil Mehta
+Vikesh Mehta
 
 ## 🙏 Acknowledgments
 
@@ -213,7 +213,7 @@ Sunil Mehta
 
 ## 📧 Support
 
-For support, email your-email@example.com or create an issue in the repository.
+For support, email vikeshmehta49@gmail.com or create an issue in the repository.
 
 ---
 
