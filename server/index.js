@@ -1,6 +1,7 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 
@@ -8,7 +9,12 @@ const app = express();
 connectDB();
 
 // Init Middleware
-app.use(cors());
+const corsOptions = {
+  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
 app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.send('API Running'));
